@@ -1,0 +1,23 @@
+{% include 'DRUGS/partials/head.html' %}
+
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <title>{% block title %}{% endblock title %} Guide</title>
+</head>
+
+<body>
+    {% include 'DRUGS/partials/header.html' %}
+    {% include 'DRUGS/partials/nav.html' %}
+
+    <main class="main-content-container">
+        <div class="main-content main-content-list container">
+            {% block content %}{% endblock content %}
+        </div>
+    </main>
+    {% include 'DRUGS/partials/footer.html' %}
+</body>
+
+</html>
